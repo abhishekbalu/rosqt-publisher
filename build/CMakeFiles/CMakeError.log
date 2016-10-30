@@ -1,0 +1,169 @@
+Determining if the pthread_create exist failed with the following output:
+Change Dir: /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3652049112/fast"
+make[1]: Entering directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3652049112.dir/build.make CMakeFiles/cmTryCompileExec3652049112.dir/build
+make[2]: Entering directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3652049112.dir/CheckSymbolExists.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3652049112.dir/CheckSymbolExists.c.o   -c /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTryCompileExec3652049112
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3652049112.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec3652049112.dir/CheckSymbolExists.c.o  -o cmTryCompileExec3652049112 -rdynamic 
+CMakeFiles/cmTryCompileExec3652049112.dir/CheckSymbolExists.c.o: In function `main':
+CheckSymbolExists.c:(.text+0x16): undefined reference to `pthread_create'
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTryCompileExec3652049112.dir/build.make:88: recipe for target 'cmTryCompileExec3652049112' failed
+make[2]: *** [cmTryCompileExec3652049112] Error 1
+make[2]: Leaving directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+Makefile:118: recipe for target 'cmTryCompileExec3652049112/fast' failed
+make[1]: *** [cmTryCompileExec3652049112/fast] Error 2
+make[1]: Leaving directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+
+File /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <pthread.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef pthread_create
+  return ((int*)(&pthread_create))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function pthread_create exists in the pthreads failed with the following output:
+Change Dir: /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec1755472144/fast"
+make[1]: Entering directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec1755472144.dir/build.make CMakeFiles/cmTryCompileExec1755472144.dir/build
+make[2]: Entering directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec1755472144.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create   -o CMakeFiles/cmTryCompileExec1755472144.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.0/Modules/CheckFunctionExists.c
+Linking C executable cmTryCompileExec1755472144
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec1755472144.dir/link.txt --verbose=1
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=pthread_create    CMakeFiles/cmTryCompileExec1755472144.dir/CheckFunctionExists.c.o  -o cmTryCompileExec1755472144 -rdynamic -lpthreads 
+/usr/bin/ld: cannot find -lpthreads
+collect2: error: ld returned 1 exit status
+CMakeFiles/cmTryCompileExec1755472144.dir/build.make:88: recipe for target 'cmTryCompileExec1755472144' failed
+make[2]: Leaving directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+make[2]: *** [cmTryCompileExec1755472144] Error 1
+Makefile:118: recipe for target 'cmTryCompileExec1755472144/fast' failed
+make[1]: Leaving directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec1755472144/fast] Error 2
+
+
+Determining if the Q_WS_WIN exist failed with the following output:
+Change Dir: /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2944507951/fast"
+make[1]: Entering directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2944507951.dir/build.make CMakeFiles/cmTryCompileExec2944507951.dir/build
+make[2]: Entering directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2944507951.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec2944507951.dir/CheckSymbolExists.cxx.o -c /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_WIN’ was not declared in this scope
+   return ((int*)(&Q_WS_WIN))[argc];
+                   ^
+CMakeFiles/cmTryCompileExec2944507951.dir/build.make:57: recipe for target 'CMakeFiles/cmTryCompileExec2944507951.dir/CheckSymbolExists.cxx.o' failed
+make[2]: *** [CMakeFiles/cmTryCompileExec2944507951.dir/CheckSymbolExists.cxx.o] Error 1
+make[2]: Leaving directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+Makefile:118: recipe for target 'cmTryCompileExec2944507951/fast' failed
+make[1]: Leaving directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2944507951/fast] Error 2
+
+File /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_WIN
+  return ((int*)(&Q_WS_WIN))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_QWS exist failed with the following output:
+Change Dir: /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec3216999321/fast"
+make[1]: Entering directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3216999321.dir/build.make CMakeFiles/cmTryCompileExec3216999321.dir/build
+make[2]: Entering directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3216999321.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec3216999321.dir/CheckSymbolExists.cxx.o -c /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_QWS’ was not declared in this scope
+   return ((int*)(&Q_WS_QWS))[argc];
+                   ^
+CMakeFiles/cmTryCompileExec3216999321.dir/build.make:57: recipe for target 'CMakeFiles/cmTryCompileExec3216999321.dir/CheckSymbolExists.cxx.o' failed
+make[2]: *** [CMakeFiles/cmTryCompileExec3216999321.dir/CheckSymbolExists.cxx.o] Error 1
+make[2]: Leaving directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+Makefile:118: recipe for target 'cmTryCompileExec3216999321/fast' failed
+make[1]: Leaving directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec3216999321/fast] Error 2
+
+File /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_QWS
+  return ((int*)(&Q_WS_QWS))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the Q_WS_MAC exist failed with the following output:
+Change Dir: /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTryCompileExec2693413517/fast"
+make[1]: Entering directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+/usr/bin/make -f CMakeFiles/cmTryCompileExec2693413517.dir/build.make CMakeFiles/cmTryCompileExec2693413517.dir/build
+make[2]: Entering directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec2693413517.dir/CheckSymbolExists.cxx.o
+/usr/bin/c++    -I/usr/include/qt4    -o CMakeFiles/cmTryCompileExec2693413517.dir/CheckSymbolExists.cxx.o -c /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx
+/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx: In function ‘int main(int, char**)’:
+/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:8:19: error: ‘Q_WS_MAC’ was not declared in this scope
+   return ((int*)(&Q_WS_MAC))[argc];
+                   ^
+CMakeFiles/cmTryCompileExec2693413517.dir/build.make:57: recipe for target 'CMakeFiles/cmTryCompileExec2693413517.dir/CheckSymbolExists.cxx.o' failed
+make[2]: *** [CMakeFiles/cmTryCompileExec2693413517.dir/CheckSymbolExists.cxx.o] Error 1
+make[2]: Leaving directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+Makefile:118: recipe for target 'cmTryCompileExec2693413517/fast' failed
+make[1]: Leaving directory '/home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp'
+make[1]: *** [cmTryCompileExec2693413517/fast] Error 2
+
+File /home/abhishek/jade_workspace/abhishek22/build/CMakeFiles/CMakeTmp/CheckSymbolExists.cxx:
+/* */
+#include <QtCore/qglobal.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef Q_WS_MAC
+  return ((int*)(&Q_WS_MAC))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
